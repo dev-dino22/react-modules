@@ -1,6 +1,6 @@
 {
   "name": "@dev-dino22/modal-components",
-  "version": "0.1.2",
+  "version": "0.1.7",
   "description": "Easily create modal components with this lightweight npm package",
   "type": "module",
   "types": "dist/index.d.ts",
@@ -26,6 +26,7 @@
     "react-dom": "^19.1.0"
   },
   "dependencies": {
+    "@dev-dino22/payments-hooks": "^0.1.7",
     "@emotion/css": "^11.13.5",
     "@emotion/styled": "^11.14.0"
   },

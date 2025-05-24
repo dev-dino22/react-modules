@@ -44,7 +44,7 @@ export const useAgreementModal = ({
           <ModalLayout
             modalPosition="center"
             modalSize={modalSize}
-            titleText={content.text}
+            titleText={content.infoText}
             descriptionText={content.details}
             closeType="top"
             onClose={() =>

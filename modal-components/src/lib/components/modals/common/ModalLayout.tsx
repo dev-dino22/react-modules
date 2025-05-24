@@ -7,6 +7,7 @@ import {
 } from "./ModalStyle";
 import { ModalProps } from "../../../types/modalTypes";
 import { useEscapeKeyClose } from "../../../hook/useEscapeKeyClose";
+import { createPortal } from "react-dom";
 
 const ModalLayout = ({
   modalPosition = "center",
@@ -21,7 +22,7 @@ const ModalLayout = ({
 }: ModalProps) => {
   useEscapeKeyClose(onClose);
 
-  return (
+  return createPortal(
     <ModalContainer modalPosition={modalPosition}>
       <ModalBackdrop onClick={onClose} />
       <Container modalSize={modalSize}>
@@ -53,7 +54,8 @@ const ModalLayout = ({
           </ModalBox>
         </Wrapper>
       </Container>
-    </ModalContainer>
+    </ModalContainer>,
+    document.body
   );
 };
 

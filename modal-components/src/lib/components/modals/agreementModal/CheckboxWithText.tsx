@@ -1,6 +1,6 @@
 import React from "react";
-import Checkbox from "../../common/CheckBox";
 import styled from "@emotion/styled";
+import Checkbox from "../../../../common/components/CheckBox";
 
 const AgreementContentBox = styled.div`
   width: 100%;
