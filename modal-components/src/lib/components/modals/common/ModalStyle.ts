@@ -10,6 +10,7 @@ export const ModalContainer = styled.div<{
   align-items: ${({ modalPosition }) =>
     modalPosition === "center" ? "center" : "flex-end"};
   position: fixed;
+  top: 0;
 `;
 export const ModalBackdrop = styled.div`
   width: 100%;
