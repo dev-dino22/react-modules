@@ -48,8 +48,7 @@ export const Wrapper = styled.div`
 export const ModalBoxContainer = styled.div<{
   modalPosition: "center" | "bottom";
 }>`
-  width: ${({ modalPosition }) =>
-    modalPosition === "center" ? "70%" : "100%"};
+  width: 100%;
   max-width: ${({ modalPosition }) =>
     modalPosition === "center" ? "800px" : "none"};
   height: fit-content;
